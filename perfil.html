@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - MarketPlaceStore</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="perfil.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <a href="index.html" class="logo">
+            <img src="https://www.creativefabrica.com/wp-content/uploads/2018/10/Shopping-cart-logo-by-DEEMKA-STUDIO.jpg" width="70">
+            <span>MarketPlaceStore</span>
+        </a>
+
+        <nav class="navbar">
+            <a href="index.html#categorias">Categorias</a>
+            <a href="index.html#ofertas">Ofertas</a>
+        </nav>
+
+        <div class="header-actions">
+            <a href="login.html" class="login-link" id="btnLogin">Login</a>
+            <a href="cadastro.html" class="register-link-header" id="btnCadastro">Cadastre-se</a>
+            <a href="perfil.html" class="user-profile" id="userProfile" style="display: none;">
+                <i class='bx bx-user-circle'></i>
+                <span id="userNameHeader">Minha Conta</span>
+            </a>
+            <a href="#" class="logout-link" id="btnLogoutHeader" style="display: none;">Sair</a>
+        </div>
+    </div>
+</header>
+
+<main class="profile-main">
+    <div class="profile-card">
+        <div class="profile-avatar">
+            <i class='bx bx-user-circle'></i>
+        </div>
+
+        <div class="profile-details">
+            <h1>Minha Conta</h1>
+            <p>Bem-vindo à sua área pessoal. Aqui você pode ver seus dados e sair da sessão.</p>
+
+            <div class="profile-info">
+                <div class="profile-info-item">
+                    <span>Nome</span>
+                    <strong id="perfilName"></strong>
+                </div>
+                <div class="profile-info-item">
+                    <span>E-mail</span>
+                    <strong id="perfilEmail"></strong>
+                </div>
+            </div>
+
+             <button class="btn-orders" id="btnPedidos">Meus Pedidos</button>
+            <button class="btn-logout" id="btnLogoutPage">Sair da conta</button>
+           
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>MarketPlaceStore</h3>
+            <p>Os melhores produtos com os melhores preços.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Institucional</h4>
+
+            <a href="sobrenos.html">Sobre nós</a>
+            <a href="politicapriv.html">Política de privacidade</a>
+            <a href="termos.html">Termos de uso</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Atendimento</h4>
+
+            <a href="ajuda.html">Central de ajuda</a>
+            <a href="trocas.html">Trocas e devoluções</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contato</h4>
+
+            <a href="mailto:contato@marketplacestore.com">
+                contato@marketplacestore.com
+            </a>
+
+            <a href="https://wa.me/5581998812060" target="_blank">
+                WhatsApp
+            </a>
+
+            <a href="https://instagram.com/marketplacestore" target="_blank">
+                Instagram
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        &copy; 2026 MarketPlaceStore - Todos os direitos reservados
+    </div>
+
+</footer>
+
+<!-- 1. Biblioteca Supabase PRIMEIRO -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<!-- 2. Inicialização do client -->
+<script>
+const SUPABASE_URL = "https://wlmhopaoomhoqgewzcjp.supabase.co";
+const SUPABASE_KEY = "SUA_ANON_KEY_AQUI";
+
+const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+</script>
+
+<!-- 3. Seu script do perfil -->
+<script src="perfil.js"></script>
+</body>
+</html>

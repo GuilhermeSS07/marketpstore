@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eletronicos - MarketPlaceStore</title>
+    <meta
+      name="description"
+      content="Produtos eletronicos na MarketPlaceStore"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="inicio.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="produto.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img
+            src="https://www.creativefabrica.com/wp-content/uploads/2018/10/Shopping-cart-logo-by-DEEMKA-STUDIO.jpg"
+            width="80"
+          />
+          <span>MarketPlaceStore</span>
+        </a>
+      
+        <div class="header-actions">
+          <a href="favoritos.html" class="favorite-icon" title="Favoritos">
+            <i class='bx bx-heart'></i>
+          </a>
+          <div class="cart-icon">
+            <a href="carrinho.html">
+              <img
+                width="28"
+                src="https://img.icons8.com/material-rounded/24/shopping-cart.png"
+              />
+            </a>
+            <span id="cart-count">0</span>
+          </div>
+        </div>
+    </header>
+    <main>
+      <section class="products container" style="padding-top: 40px">
+        <h2 class="title">Eletrônicos</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <img
+              src="https://m.media-amazon.com/images/I/51Rb0cGTweL._AC_SX679_.jpg"
+            />
+            <h3>Smartphone</h3>
+             <button class="favorite-btn" data-product-id="7" aria-label="Favoritar Smartphone"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 899,00</p>
+            <a href="produto.html?id=7" class="btn">Ver Detalhes</a>
+            <button
+              class="btn btn-cart"
+              onclick="
+                adicionarAoCarrinho(
+                  7,
+                  'Smartphone',
+                  899.0,
+                  'https://m.media-amazon.com/images/I/51Rb0cGTweL._AC_SX679_.jpg',
+                )
+              "
+            >
+              Adicionar ao Carrinho
+            </button>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://m.media-amazon.com/images/I/61DFgTmj9xL._AC_SX522_.jpg"
+            />
+            <h3>Fone Bluetooth</h3>
+              <button class="favorite-btn" data-product-id="8" aria-label="Favoritar Fone Bluetooth"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 279,00</p>
+            <a href="produto.html?id=8" class="btn">Ver Detalhes</a>
+            <button
+              class="btn btn-cart"
+              onclick="
+                adicionarAoCarrinho(
+                  8,
+                  'Fone Bluetooth',
+                  279.0,
+                  'https://m.media-amazon.com/images/I/61DFgTmj9xL._AC_SX522_.jpg',
+                )
+              "
+            >
+              Adicionar ao Carrinho
+            </button>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://m.media-amazon.com/images/I/61SzOmxnVDL._AC_SX679_.jpg"
+            />
+            <h3>Smartwatch</h3>
+              <button class="favorite-btn" data-product-id="9" aria-label="Favoritar Smartwatch"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 214,00</p>
+            <a href="produto.html?id=9" class="btn">Ver Detalhes</a>
+            <button
+              class="btn btn-cart"
+              onclick="
+                adicionarAoCarrinho(
+                  9,
+                  'Smartwatch',
+                  214.0,
+                  'https://m.media-amazon.com/images/I/61SzOmxnVDL._AC_SX679_.jpg',
+                )
+              "
+            >
+              Adicionar ao Carrinho
+            </button>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://m.media-amazon.com/images/I/61l33qbKw-L._AC_SX679_.jpg"
+            />
+            <h3>Notebook Gamer</h3>
+              <button class="favorite-btn" data-product-id="10" aria-label="Favoritar Notebook Gamer"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 3.499,00</p>
+            <a href="produto.html?id=10" class="btn">Ver Detalhes</a>
+            <button
+              class="btn btn-cart"
+              onclick="
+                adicionarAoCarrinho(
+                  10,
+                  'Notebook Gamer',
+                  3499.0,
+                  'https://m.media-amazon.com/images/I/61l33qbKw-L._AC_SX679_.jpg',
+                )
+              "
+            >
+              Adicionar ao Carrinho
+            </button>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://m.media-amazon.com/images/I/61XOOeYwCCL._AC_SX522_.jpg"
+            />
+            <h3>Smart TV 32"</h3>
+              <button class="favorite-btn" data-product-id="11" aria-label="Favoritar Smart TV 32 polegadas"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 976,00</p>
+            <a href="produto.html?id=11" class="btn">Ver Detalhes</a>
+            <button
+              class="btn btn-cart"
+              onclick="
+                adicionarAoCarrinho(
+                  11,
+                  'Smart TV 32 polegadas',
+                  976.0,
+                  'https://m.media-amazon.com/images/I/61XOOeYwCCL._AC_SX522_.jpg',
+                )
+              "
+            >
+              Adicionar ao Carrinho
+            </button>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://m.media-amazon.com/images/I/71+kXnOiM2L._AC_SX679_.jpg"
+            />
+            <h3>Headset Gamer</h3>
+              <button class="favorite-btn" data-product-id="12" aria-label="Favoritar Headset Gamer"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 159,99</p>
+            <a href="produto.html?id=12" class="btn">Ver Detalhes</a>
+            <button
+              class="btn btn-cart"
+              onclick="
+                adicionarAoCarrinho(
+                  12,
+                  'Headset Gamer',
+                  159.99,
+                  'https://m.media-amazon.com/images/I/71+kXnOiM2L._AC_SX679_.jpg',
+                )
+              "
+            >
+              Adicionar ao Carrinho
+            </button>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://m.media-amazon.com/images/I/613G4H7ObTL._AC_SX679_.jpg"
+            />
+            <h3>Tablet 10 polegadas</h3>
+              <button class="favorite-btn" data-product-id="13" aria-label="Favoritar Tablet 10 polegadas"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 899,00</p>
+            <a href="produto.html?id=13" class="btn">Ver Detalhes</a>
+            <button
+              class="btn btn-cart"
+              onclick="
+                adicionarAoCarrinho(
+                  13,
+                  'Tablet 10 polegadas',
+                  899.0,
+                  'https://m.media-amazon.com/images/I/613G4H7ObTL._AC_SX679_.jpg',
+                )
+              "
+            >
+              Adicionar ao Carrinho
+            </button>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://m.media-amazon.com/images/I/61S6CABfB7L._AC_SX679_.jpg"
+            />
+            <h3>Caixa de Som Bluetooth</h3>
+              <button class="favorite-btn" data-product-id="14" aria-label="Favoritar Caixa de Som Bluetooth"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 669,00</p>
+            <a href="produto.html?id=14" class="btn">Ver Detalhes</a>
+            <button
+              class="btn btn-cart"
+              onclick="
+                adicionarAoCarrinho(
+                  14,
+                  'Caixa de Som Bluetooth',
+                  669.0,
+                  'https://m.media-amazon.com/images/I/61S6CABfB7L._AC_SX679_.jpg',
+                )
+              "
+            >
+              Adicionar ao Carrinho
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>MarketPlaceStore</h3>
+            <p>Os melhores produtos com os melhores preços.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Institucional</h4>
+
+            <a href="sobrenos.html">Sobre nós</a>
+            <a href="politicapriv.html">Política de privacidade</a>
+            <a href="termos.html">Termos de uso</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Atendimento</h4>
+
+            <a href="ajuda.html">Central de ajuda</a>
+            <a href="trocas.html">Trocas e devoluções</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contato</h4>
+
+            <a href="mailto:contato@marketplacestore.com">
+                contato@marketplacestore.com
+            </a>
+
+            <a href="https://wa.me/5581998812060" target="_blank">
+                WhatsApp
+            </a>
+
+            <a href="https://instagram.com/marketplacestore" target="_blank">
+                Instagram
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        &copy; 2026 MarketPlaceStore - Todos os direitos reservados
+    </div>
+
+</footer>
+    <div id="toast" class="toast"></div>
+    <script src="carrinho.js"></script>
+    <script src="inicio.js"></script>
+  </body>
+</html>

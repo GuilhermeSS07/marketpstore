@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - MarketPlaceStore</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="cadastro.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main class="main-login">
+
+  <div class="login-logo">
+    <a href="index.html" class="logo-link">
+      <img src="https://www.creativefabrica.com/wp-content/uploads/2018/10/Shopping-cart-logo-by-DEEMKA-STUDIO.jpg">
+      <span>MarketPlaceStore</span>
+    </a>
+  </div>
+
+  <div class="login-container">
+
+    <h1>Criar conta</h1>
+    <p class="login-subtitle">Preencha os dados para se cadastrar</p>
+
+    <form id="cadastroForm">
+
+      <div class="input-group">
+        <input type="text" id="nome" placeholder="Nome completo" required autocomplete="off">
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="email" placeholder="E-mail" required autocomplete="off">
+      </div>
+
+      <div class="input-group">
+        <div class="password-wrapper">
+          <input type="password" id="senha" placeholder="Senha" minlength="6" required>
+          <button type="button" class="toggle-password">
+            <i class="fa-solid fa-eye"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="password-wrapper">
+          <input type="password" id="confirmarSenha" placeholder="Confirmar senha" minlength="6" required>
+          <button type="button" class="toggle-password">
+            <i class="fa-solid fa-eye"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- BOTÃO CORRETO COM ID -->
+      <button type="submit" id="btnCadastrar" class="btn-login">
+        Cadastrar
+      </button>
+
+    </form>
+
+    <div id="mensagem"></div>
+
+    <div class="login-footer">
+      <p>Já tem conta? <a href="login.html">Entrar</a></p>
+    </div>
+
+  </div>
+
+</main>
+
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>MarketPlaceStore</h3>
+            <p>Os melhores produtos com os melhores preços.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Institucional</h4>
+
+            <a href="sobrenos.html">Sobre nós</a>
+            <a href="politicapriv.html">Política de privacidade</a>
+            <a href="termos.html">Termos de uso</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Atendimento</h4>
+
+            <a href="ajuda.html">Central de ajuda</a>
+            <a href="trocas.html">Trocas e devoluções</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contato</h4>
+
+            <a href="mailto:contato@marketplacestore.com">
+                contato@marketplacestore.com
+            </a>
+
+            <a href="https://wa.me/5581998812060" target="_blank">
+                WhatsApp
+            </a>
+
+            <a href="https://instagram.com/marketplacestore" target="_blank">
+                Instagram
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        &copy; 2026 MarketPlaceStore - Todos os direitos reservados
+    </div>
+
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="cadastro.js"></script>
+
+</body>
+</html>

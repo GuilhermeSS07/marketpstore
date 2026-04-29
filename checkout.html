@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pagamento - MarketPlaceStore</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="inicio.css">
+<link rel="stylesheet" href="checkout.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header class="header">
+    
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img
+            src="https://www.creativefabrica.com/wp-content/uploads/2018/10/Shopping-cart-logo-by-DEEMKA-STUDIO.jpg"
+            width="80"
+          />
+          <span>MarketPlaceStore</span>
+        </a>
+      </div>
+
+  </header>
+
+<main class="checkout-container">
+
+  <div class="checkout-wrapper">
+
+    <!-- RESUMO DOS PRODUTOS -->
+    <div class="checkout-section">
+      <h2>Resumo do Pedido</h2>
+      <div class="checkout" id="checkout"></div>
+    </div>
+
+    <!-- FORMAS DE PAGAMENTO -->
+    <div class="checkout-section">
+      <h2>Forma de Pagamento</h2>
+
+      <div class="payment-methods">
+        <button class="payment-btn" onclick="selecionarPagamento('credito', event)">
+          💳 Cartão de Crédito
+        </button>
+        <button class="payment-btn" onclick="selecionarPagamento('debito', event  )">
+          💳 Cartão de Débito
+        </button>
+        <button class="payment-btn" onclick="selecionarPagamento('pix', event)">
+          📱 PIX
+        </button>
+        <button class="payment-btn" onclick="selecionarPagamento('boleto', event)">
+          📄 Boleto Bancário
+        </button>
+      </div>
+
+      <!-- FORMULÁRIOS DE PAGAMENTO -->
+      <div id="payment-form-container"></div>
+
+      <!-- MENSAGEM DE ERRO -->
+      <div id="payment-message"></div>
+
+    </div>
+
+  </div>
+
+</main>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>MarketPlaceStore</h3>
+            <p>Os melhores produtos com os melhores preços.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Institucional</h4>
+
+            <a href="sobrenos.html">Sobre nós</a>
+            <a href="politicapriv.html">Política de privacidade</a>
+            <a href="termos.html">Termos de uso</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Atendimento</h4>
+
+            <a href="ajuda.html">Central de ajuda</a>
+            <a href="trocas.html">Trocas e devoluções</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contato</h4>
+
+            <a href="mailto:contato@marketplacestore.com">
+                contato@marketplacestore.com
+            </a>
+
+            <a href="https://wa.me/5581998812060" target="_blank">
+                WhatsApp
+            </a>
+
+            <a href="https://instagram.com/marketplacestore" target="_blank">
+                Instagram
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        &copy; 2026 MarketPlaceStore - Todos os direitos reservados
+    </div>
+
+</footer>
+
+<script src="checkout.js"></script>
+
+</body>
+</html>

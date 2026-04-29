@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Esportes - MarketPlaceStore</title>
+<meta name="description" content="Produtos esportivos na MarketPlaceStore">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="inicio.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="produto.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+
+        <a href="index.html" class="logo">
+            <img src="https://www.creativefabrica.com/wp-content/uploads/2018/10/Shopping-cart-logo-by-DEEMKA-STUDIO.jpg" width="80">
+            <span>MarketPlaceStore</span>
+        </a>
+
+
+        <div class="header-actions">
+            <a href="favoritos.html" class="favorite-icon" title="Favoritos">
+                <i class='bx bx-heart'></i>
+            </a>
+            <div class="cart-icon">
+                <a href="carrinho.html">
+                    <img width="28" src="https://img.icons8.com/material-rounded/24/shopping-cart.png">
+                </a>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<main>
+
+<section class="products container" style="padding-top: 40px;">
+
+    <h2 class="title">Esportes</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/615MNWVws8L._AC_SX679_.jpg">
+            <h3>Bola de Futebol</h3>
+                <button class="favorite-btn" data-product-id="31" aria-label="Favoritar Bola de Futebol"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 89,90</p>
+            <a href="produto.html?id=31" class="btn">Ver Detalhes</a>
+            <button class="btn btn-cart" onclick="adicionarAoCarrinho(31, 'Bola de Futebol', 89.90, 'https://m.media-amazon.com/images/I/615MNWVws8L._AC_SX679_.jpg')">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/51WUvXlRWbL._AC_SX569_.jpg">
+            <h3>Tênis Esportivo</h3>
+            <button class="favorite-btn" data-product-id="32" aria-label="Favoritar Tênis Esportivo"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 249,90</p>
+            <a href="produto.html?id=32" class="btn">Ver Detalhes</a>
+            <button class="btn btn-cart" onclick="adicionarAoCarrinho(32, 'Tênis Esportivo', 249.90, 'https://m.media-amazon.com/images/I/51WUvXlRWbL._AC_SX569_.jpg')">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/31G5ooeL5fL._AC_.jpg">
+            <h3>Halter 10kg</h3>
+            <button class="favorite-btn" data-product-id="33" aria-label="Favoritar Halter 10kg"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 119,90</p>
+            <a href="produto.html?id=33" class="btn">Ver Detalhes</a>
+            <button class="btn btn-cart" onclick="adicionarAoCarrinho(33, 'Halter 10kg', 119.90, 'https://m.media-amazon.com/images/I/31G5ooeL5fL._AC_.jpg')">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/71JV2+AWn1L._AC_SX679_.jpg">
+            <h3>Bicicleta Aro 29</h3>
+            <button class="favorite-btn" data-product-id="34" aria-label="Favoritar Bicicleta Aro 29"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 826,00</p>
+            <a href="produto.html?id=34" class="btn">Ver Detalhes</a>
+            <button class="btn btn-cart" onclick="adicionarAoCarrinho(34, 'Bicicleta Aro 29', 826.00, 'https://m.media-amazon.com/images/I/71JV2+AWn1L._AC_SX679_.jpg')">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/71wm42EtoNL._AC_SX679_.jpg">
+            <h3>Corda de Pular</h3>
+            <button class="favorite-btn" data-product-id="35" aria-label="Favoritar Corda de Pular"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 14,90</p>
+            <a href="produto.html?id=35" class="btn">Ver Detalhes</a>
+            <button class="btn btn-cart" onclick="adicionarAoCarrinho(35, 'Corda de Pular', 14.90, 'https://m.media-amazon.com/images/I/71wm42EtoNL._AC_SX679_.jpg')">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/71HCjYBabTL._AC_SX679_.jpg">
+            <h3>Luvas de Boxe</h3>
+            <button class="favorite-btn" data-product-id="36" aria-label="Favoritar Luvas de Boxe"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 129,90</p>
+            <a href="produto.html?id=36" class="btn">Ver Detalhes</a>
+            <button class="btn btn-cart" onclick="adicionarAoCarrinho(36, 'Luvas de Boxe', 129.90, 'https://m.media-amazon.com/images/I/71HCjYBabTL._AC_SX679_.jpg')">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/41QQi9ASb4L._AC_SX679_.jpg">
+            <h3>Tapete de Yoga</h3>
+            <button class="favorite-btn" data-product-id="37" aria-label="Favoritar Tapete de Yoga"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 49,90</p>
+            <a href="produto.html?id=37" class="btn">Ver Detalhes</a>
+            <button class="btn btn-cart" onclick="adicionarAoCarrinho(37, 'Tapete de Yoga', 49.90, 'https://m.media-amazon.com/images/I/41QQi9ASb4L._AC_SX679_.jpg')">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/510mLzHFulL._AC_SX679_.jpg">
+            <h3>Garrafa Térmica</h3>
+            <button class="favorite-btn" data-product-id="38" aria-label="Favoritar Garrafa Térmica"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 42,90</p>
+            <a href="produto.html?id=38" class="btn">Ver Detalhes</a>
+            <button class="btn btn-cart" onclick="adicionarAoCarrinho(38, 'Garrafa Térmica', 42.90, 'https://m.media-amazon.com/images/I/510mLzHFulL._AC_SX679_.jpg')">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>MarketPlaceStore</h3>
+            <p>Os melhores produtos com os melhores preços.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Institucional</h4>
+
+            <a href="sobrenos.html">Sobre nós</a>
+            <a href="politicapriv.html">Política de privacidade</a>
+            <a href="termos.html">Termos de uso</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Atendimento</h4>
+
+            <a href="ajuda.html">Central de ajuda</a>
+            <a href="trocas.html">Trocas e devoluções</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contato</h4>
+
+            <a href="mailto:contato@marketplacestore.com">
+                contato@marketplacestore.com
+            </a>
+
+            <a href="https://wa.me/5581998812060" target="_blank">
+                WhatsApp
+            </a>
+
+            <a href="https://instagram.com/marketplacestore" target="_blank">
+                Instagram
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        &copy; 2026 MarketPlaceStore - Todos os direitos reservados
+    </div>
+
+</footer>
+
+<div id="toast" class="toast"></div>
+
+<script src="carrinho.js"></script>
+<script src="inicio.js"></script>
+
+</body>
+</html>

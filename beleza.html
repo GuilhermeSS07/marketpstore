@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Beleza - MarketPlaceStore</title>
+<meta name="description" content="Produtos de beleza na MarketPlaceStore">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="inicio.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="produto.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+
+        <a href="index.html" class="logo">
+            <img src="https://www.creativefabrica.com/wp-content/uploads/2018/10/Shopping-cart-logo-by-DEEMKA-STUDIO.jpg" width="80">
+            <span>MarketPlaceStore</span>
+        </a>
+
+
+
+        <div class="header-actions">
+            <a href="favoritos.html" class="favorite-icon" title="Favoritos">
+                <i class='bx bx-heart'></i>
+            </a>
+            <div class="cart-icon">
+                <a href="carrinho.html">
+                    <img width="28" src="https://img.icons8.com/material-rounded/24/shopping-cart.png">
+                </a>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<main>
+
+<section class="products container" style="padding-top: 40px;">
+
+    <h2 class="title">Beleza</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/51rg13yto6L._AC_SX522_.jpg">
+            <h3>Perfume Feminino</h3>
+            <button class="favorite-btn" data-product-id="39" aria-label="Favoritar Perfume Feminino"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 169,90</p>
+            <a href="produto.html?id=39" class="btn">Ver Detalhes</a>
+            <button class="btn btn-cart" onclick="adicionarAoCarrinho(39, 'Perfume Feminino', 169.90, 'https://m.media-amazon.com/images/I/51rg13yto6L._AC_SX522_.jpg')">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/51i+r2a0fKL._AC_SX522_.jpg">
+            <h3>Kit de Maquiagem</h3>   
+            <button class="favorite-btn" data-product-id="40" aria-label="Favoritar Kit de Maquiagem"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 99,90</p>
+            <a href="produto.html?id=40" class="btn">Ver Detalhes</a>
+            <button class="btn btn-cart" onclick="adicionarAoCarrinho(40, 'Kit de Maquiagem', 99.90, 'https://m.media-amazon.com/images/I/51i+r2a0fKL._AC_SX522_.jpg')">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/513o6E8c7xL._AC_SX679_.jpg">
+            <h3>Secador de Cabelo</h3>
+            <button class="favorite-btn" data-product-id="41" aria-label="Favoritar Secador de Cabelo"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 199,90</p>
+            <a href="produto.html?id=41" class="btn">Ver Detalhes</a>
+            <button class="btn btn-cart" onclick="adicionarAoCarrinho(41, 'Secador de Cabelo', 199.90, 'https://m.media-amazon.com/images/I/513o6E8c7xL._AC_SX679_.jpg')">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/61oXtBumUwL._AC_SX679_.jpg">
+            <h3>Creme Hidratante</h3>
+            <button class="favorite-btn" data-product-id="42" aria-label="Favoritar Creme Hidratante"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 79,90</p>
+            <a href="produto.html?id=42" class="btn">Ver Detalhes</a>
+            <button class="btn btn-cart" onclick="adicionarAoCarrinho(42, 'Creme Hidratante', 79.90, 'https://m.media-amazon.com/images/I/61oXtBumUwL._AC_SX679_.jpg')">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/61pu-QboQML._AC_SX522_.jpg">
+            <h3>Shampoo</h3>
+            <button class="favorite-btn" data-product-id="43" aria-label="Favoritar Shampoo"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 30,90</p>
+            <a href="produto.html?id=43" class="btn">Ver Detalhes</a>
+            <button class="btn btn-cart" onclick="adicionarAoCarrinho(43, 'Shampoo', 30.90, 'https://m.media-amazon.com/images/I/61pu-QboQML._AC_SX522_.jpg')">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/6177k0wf8eL._AC_SX522_.jpg">
+            <h3>Escova de Cabelo</h3>
+            <button class="favorite-btn" data-product-id="44" aria-label="Favoritar Escova de Cabelo"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 23,90</p>
+            <a href="produto.html?id=44" class="btn">Ver Detalhes</a>
+            <button class="btn btn-cart" onclick="adicionarAoCarrinho(44, 'Escova de Cabelo', 23.90, 'https://m.media-amazon.com/images/I/6177k0wf8eL._AC_SX522_.jpg')">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/71EErTFyOtL._AC_SX522_.jpg">
+            <h3>Kit de Esmaltes</h3>
+            <button class="favorite-btn" data-product-id="45" aria-label="Favoritar Kit de Esmaltes"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 29,90</p>
+            <a href="produto.html?id=45" class="btn">Ver Detalhes</a>
+            <button class="btn btn-cart" onclick="adicionarAoCarrinho(45, 'Kit de Esmaltes', 29.90, 'https://m.media-amazon.com/images/I/71EErTFyOtL._AC_SX522_.jpg')">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/51l8+DUe-6L._AC_SX522_.jpg">
+            <h3>Perfume Masculino</h3>
+            <button class="favorite-btn" data-product-id="46" aria-label="Favoritar Perfume Masculino"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 146,90</p>
+            <a href="produto.html?id=46" class="btn">Ver Detalhes</a>
+            <button class="btn btn-cart" onclick="adicionarAoCarrinho(46, 'Perfume Masculino', 146.90, 'https://m.media-amazon.com/images/I/51l8+DUe-6L._AC_SX522_.jpg')">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>MarketPlaceStore</h3>
+            <p>Os melhores produtos com os melhores preços.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Institucional</h4>
+
+            <a href="sobrenos.html">Sobre nós</a>
+            <a href="politicapriv.html">Política de privacidade</a>
+            <a href="termos.html">Termos de uso</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Atendimento</h4>
+
+            <a href="ajuda.html">Central de ajuda</a>
+            <a href="trocas.html">Trocas e devoluções</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contato</h4>
+
+            <a href="mailto:contato@marketplacestore.com">
+                contato@marketplacestore.com
+            </a>
+
+            <a href="https://wa.me/5581998812060" target="_blank">
+                WhatsApp
+            </a>
+
+            <a href="https://instagram.com/marketplacestore" target="_blank">
+                Instagram
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        &copy; 2026 MarketPlaceStore - Todos os direitos reservados
+    </div>
+
+</footer>
+
+<div id="toast" class="toast"></div>
+
+<script src="carrinho.js"></script>
+<script src="inicio.js"></script>
+
+</body>
+</html>

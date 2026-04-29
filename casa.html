@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Casa - MarketPlaceStore</title>
+<meta name="description" content="Produtos para casa na MarketPlaceStore">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="inicio.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="produto.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+
+        <a href="index.html" class="logo">
+            <img src="https://www.creativefabrica.com/wp-content/uploads/2018/10/Shopping-cart-logo-by-DEEMKA-STUDIO.jpg" width="80">
+            <span>MarketPlaceStore</span>
+        </a>
+
+     
+
+        <div class="header-actions">
+            <a href="favoritos.html" class="favorite-icon" title="Favoritos">
+                <i class='bx bx-heart'></i>
+            </a>
+            <div class="cart-icon">
+                <a href="carrinho.html">
+                    <img width="28" src="https://img.icons8.com/material-rounded/24/shopping-cart.png">
+                </a>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<main>
+
+<section class="products container" style="padding-top: 40px;">
+
+    <h2 class="title">Casa</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/51VNtZqvDHL._AC_SX679_.jpg">
+            <h3>Sofá 2 Lugares</h3>
+                <button class="favorite-btn" data-product-id="23" aria-label="Favoritar Sofá 2 Lugares"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 1.799,00</p>
+            <a href="produto.html?id=23" class="btn">Ver Detalhes</a>
+            <button class="btn btn-cart" onclick="adicionarAoCarrinho(23, 'Sofá 2 Lugares', 1799.00, 'https://m.media-amazon.com/images/I/51VNtZqvDHL._AC_SX679_.jpg')">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.magazineluiza.com.br/a-static/420x420/mesa-de-jantar-com-6-cadeiras-retangular-cinamomo-off-white-destak-moveis-sao-carlos/magazineluiza/240452500/9684e2a8dac2c47cbaef114e824c24e5.jpg">
+            <h3>Mesa de Jantar</h3>
+            <button class="favorite-btn" data-product-id="24" aria-label="Favoritar Mesa de Jantar"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 899,00</p>
+            <a href="produto.html?id=24" class="btn">Ver Detalhes</a>
+            <button class="btn btn-cart" onclick="adicionarAoCarrinho(24, 'Mesa de Jantar', 899.00, 'https://m.magazineluiza.com.br/a-static/420x420/mesa-de-jantar-com-6-cadeiras-retangular-cinamomo-off-white-destak-moveis-sao-carlos/magazineluiza/240452500/9684e2a8dac2c47cbaef114e824c24e5.jpg')">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/513xX90ItpL._AC_SX679_.jpg">
+            <h3>Luminária</h3>
+            <button class="favorite-btn" data-product-id="25" aria-label="Favoritar Luminária"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 149,90</p>
+            <a href="produto.html?id=25" class="btn">Ver Detalhes</a>
+            <button class="btn btn-cart" onclick="adicionarAoCarrinho(25, 'Luminária', 149.90, 'https://m.media-amazon.com/images/I/513xX90ItpL._AC_SX679_.jpg')">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/71fYOShpOaL._AC_SX679_.jpg">
+            <h3>Tapete</h3>
+            <button class="favorite-btn" data-product-id="26" aria-label="Favoritar Tapete"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 78,90</p>
+            <a href="produto.html?id=26" class="btn">Ver Detalhes</a>
+            <button class="btn btn-cart" onclick="adicionarAoCarrinho(26, 'Tapete', 78.90, 'https://m.media-amazon.com/images/I/71fYOShpOaL._AC_SX679_.jpg')">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/91wJtb-EAKL._AC_SX679_.jpg">
+            <h3>Jogo de Panelas</h3>
+            <button class="favorite-btn" data-product-id="27" aria-label="Favoritar Jogo de Panelas"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 299,90</p>
+            <a href="produto.html?id=27" class="btn">Ver Detalhes</a>
+            <button class="btn btn-cart" onclick="adicionarAoCarrinho(27, 'Jogo de Panelas', 299.90, 'https://m.media-amazon.com/images/I/91wJtb-EAKL._AC_SX679_.jpg')">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/51N3Xi4JJML._AC_SX679_.jpg">
+            <h3>Liquidificador</h3>
+            <button class="favorite-btn" data-product-id="28" aria-label="Favoritar Liquidificador"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 129,90</p>
+            <a href="produto.html?id=28" class="btn">Ver Detalhes</a>
+            <button class="btn btn-cart" onclick="adicionarAoCarrinho(28, 'Liquidificador', 129.90, 'https://m.media-amazon.com/images/I/51N3Xi4JJML._AC_SX679_.jpg')">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/71cM7xwJqXL._AC_SX679_.jpg">
+            <h3>Cafeteira Elétrica</h3>
+            <button class="favorite-btn" data-product-id="29" aria-label="Favoritar Cafeteira Elétrica"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 119,90</p>
+            <a href="produto.html?id=29" class="btn">Ver Detalhes</a>
+            <button class="btn btn-cart" onclick="adicionarAoCarrinho(29, 'Cafeteira Elétrica', 119.90, 'https://m.media-amazon.com/images/I/71cM7xwJqXL._AC_SX679_.jpg')">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/51wBZ7Ye3XL._AC_SX679_.jpg">
+            <h3>Prateleira</h3>
+            <button class="favorite-btn" data-product-id="30" aria-label="Favoritar Prateleira"><i class='bx bx-heart'></i></button>
+            <p class="price">R$ 69,90</p>
+            <a href="produto.html?id=30" class="btn">Ver Detalhes</a>
+            <button class="btn btn-cart" onclick="adicionarAoCarrinho(30, 'Prateleira', 69.90, 'https://m.media-amazon.com/images/I/51wBZ7Ye3XL._AC_SX679_.jpg')">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>MarketPlaceStore</h3>
+            <p>Os melhores produtos com os melhores preços.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Institucional</h4>
+
+            <a href="sobrenos.html">Sobre nós</a>
+            <a href="politicapriv.html">Política de privacidade</a>
+            <a href="termos.html">Termos de uso</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Atendimento</h4>
+
+            <a href="ajuda.html">Central de ajuda</a>
+            <a href="trocas.html">Trocas e devoluções</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contato</h4>
+
+            <a href="mailto:contato@marketplacestore.com">
+                contato@marketplacestore.com
+            </a>
+
+            <a href="https://wa.me/5581998812060" target="_blank">
+                WhatsApp
+            </a>
+
+            <a href="https://instagram.com/marketplacestore" target="_blank">
+                Instagram
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        &copy; 2026 MarketPlaceStore - Todos os direitos reservados
+    </div>
+
+</footer>
+<div id="toast" class="toast"></div>
+
+<script src="carrinho.js"></script>
+<script src="inicio.js"></script>
+
+</body>
+</html>
