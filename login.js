@@ -19,21 +19,6 @@ const mensagem =
   document.getElementById("mensagem");
 
 
-//Alteração
-document.addEventListener("DOMContentLoaded", async () => {
-  const hash = window.location.hash;
-
-  if (hash.includes("access_token")) {
-    const params = new URLSearchParams(hash.replace("#", "?"));
-
-    const access_token = params.get("access_token");
-    const refresh_token = params.get("refresh_token");
-
-    if (access_token && refresh_token) {
-      await supabaseClient.auth.setSession({
-        access_token,
-        refresh_token,
-      });
 
       // limpa a URL (importante)
       window.history.replaceState({}, document.title, "/inicio.html");
